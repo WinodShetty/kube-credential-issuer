@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+
+# Local environment
+.env
+.env.*.local
+*.local
+
+# SQLite or DB files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Coverage
+coverage/
+
+# Jest snapshots
+*.snap
+
+# React
+*.cache/
+.cache/
+public/static/
+public/build/
