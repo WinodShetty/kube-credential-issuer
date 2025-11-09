@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: issuer-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: issuer
+  template:
+    metadata:
+      labels:
+        app: issuer
+    spec:
+      containers:
+      - name: issuer
+        image: <your-dockerhub-username>/issuer-service:latest
+        ports:
+        - containerPort: 4000
+      - name: issuer
+        image: <your-dockerhub-username>/issuer-service:latest
+        ports:
+        - containerPort: 4000
